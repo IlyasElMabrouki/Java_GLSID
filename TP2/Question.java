@@ -30,7 +30,6 @@ public class Question {
         System.out.println("Entrer votre réponse:");
         Scanner sc = new Scanner(System.in);
         int answer = sc.nextInt();
-        sc.close();
         if (answer > this.reponses.length || answer <=0) {
             return false;
         }
