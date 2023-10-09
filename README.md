@@ -1,2 +1,3 @@
 ## Java Applications
-- TP1 Exercices
+- TP1 : Tableaux et chaines de caractéres
+- TP2 : Classes et objects
