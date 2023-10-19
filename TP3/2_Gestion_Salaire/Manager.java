@@ -1,5 +1,3 @@
-package Exercice2;
-
 public class Manager extends Employe{
 
     private String service;

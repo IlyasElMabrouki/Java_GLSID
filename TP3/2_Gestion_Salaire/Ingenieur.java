@@ -1,5 +1,3 @@
-package Exercice2;
-
 public class Ingenieur extends Employe{
 
     private String specialite;

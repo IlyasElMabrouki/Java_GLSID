@@ -1,5 +1,3 @@
-package Exercice2;
-
 public abstract class Employe {
     private String nom;
     private String prenom;
