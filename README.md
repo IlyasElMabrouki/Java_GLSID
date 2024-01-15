@@ -4,7 +4,7 @@
 - TP3 : OOP
 - TP4 : Interface et généricité
 - TP5 : Exceptions
-- TP6 : I/O
+- TP6 : IO
 - TP7 : JDBC
 - TP8 : Thread
 - TP9 : Sockets
