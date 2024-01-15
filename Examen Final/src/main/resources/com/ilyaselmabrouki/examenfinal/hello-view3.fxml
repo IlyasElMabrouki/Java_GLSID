@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ilyaselmabrouki.examenfinal.HelloController3">
+    <top>
+        <GridPane BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Nom" />
+                <Label text="Poste" GridPane.rowIndex="1" />
+                <Label text="Salaire" GridPane.rowIndex="2" />
+                <Label text="Departement" GridPane.rowIndex="3" />
+                <TextField fx:id="fieldNom" GridPane.columnIndex="1" />
+                <TextField fx:id="fieldPoste" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="fieldSalaire" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="fieldDepartement" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button mnemonicParsing="false" onAction="#addEmploye" text="Ajouter" GridPane.rowIndex="4" />
+                <Button mnemonicParsing="false" onAction="#deleteEmploye" text="Supprimer" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            </children>
+            <BorderPane.margin>
+                <Insets left="10.0" right="10.0" />
+            </BorderPane.margin>
+        </GridPane>
+    </top>
+    <center>
+        <TableView fx:id="tableemployes" prefHeight="214.0" prefWidth="509.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="columnID" prefWidth="104.0" text="ID" />
+                <TableColumn fx:id="columnNom" minWidth="9.60003662109375" prefWidth="106.4000244140625" text="Nom" />
+                <TableColumn fx:id="columnPoste" prefWidth="120.79998779296875" text="Poste" />
+                <TableColumn fx:id="columnSalaire" prefWidth="120.79998779296875" text="Salaire" />
+                <TableColumn fx:id="columnDepartement" prefWidth="133.5999755859375" text="Departement" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
